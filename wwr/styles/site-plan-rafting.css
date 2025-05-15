@@ -9,7 +9,7 @@ Fonts are separated by a & */
   --primary-color: #e5e3dc   ;
   --secondary-color: #b2be9d ;
   --accent1-color: #4c6d4a;
-  --accent2-color: #38573D;
+  --accent2-color: #325939;
 
   /* change the values below to your chosen font(s) */
   --heading-font: 'Crimson text';
@@ -22,9 +22,9 @@ Fonts are separated by a & */
   --paragraph-color-on-color: black; /* paragraph text on a colored background */ 
   --paragraph-background-color: #b2be9d  ;
   --nav-link-color: white;
-  --nav-background-color: #38573D;
+  --nav-background-color: #325939;
   --nav-hover-link-color: white;
-  --nav-hover-background-color: #4c6d4a;
+  --nav-hover-background-color: #5f915d;
 }
 
 
