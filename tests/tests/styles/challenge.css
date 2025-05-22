@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    background-color: gray;    
+}
+
+.opener {
+margin: 0;
+    width: 100%;
+}
+
+.pictures {
+    text-align: center;
+}
+
+.pictures img {
+    width: 15%;
+    margin: 4%;
+    border-radius: 50%;
+    border: 15px, solid,  rgb(53, 53, 53);
+}

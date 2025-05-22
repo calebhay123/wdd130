@@ -1,3 +1,7 @@
+/*Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 /* Absolutes */
 #content {
    max-width: 1600px; 
@@ -6,6 +10,14 @@
 
 body {
     background-color: #e5e3dc;
+    font-size: 22px;
+    font-family: 'Crimson text', 'Arial', 'sans-serif';
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
 }
 
 h4 {
@@ -21,11 +33,16 @@ header {
     width: 80px;
 }
 
+#logo_link {
+    padding-top: 5px;
+}
+
 /* Nav bar */
 nav a {
     text-align: center;
     color: white;
     text-decoration: none;
+    padding: 35px;
 }
 
 nav a:hover{
@@ -40,10 +57,17 @@ nav a:hover{
 
 .home-title {
     color: black;
+    font-family: 'Roboto', 'Arial', 'sans-serif';
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 #hero-img {
     width: 100%;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
 }
 
 /* Sign up */
@@ -51,6 +75,10 @@ nav a:hover{
     background-color: #325939;
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -63,10 +91,6 @@ nav a:hover{
     text-align: center;
 }
 
-main section {
-    text-align: center;
-}
-
 /* Cards */
 #background {
     height: 725px;
@@ -75,25 +99,45 @@ main section {
 
 .icon {
     width: 80px;
+    padding-top: 10px;
+}
+
+.card-img {
+    border: 10px solid #325939;
+}
+
+main section {
+    text-align: center;
+}
+
+main section img {
+    box-sizing: border-box;
 }
 
 /* More then thrill box */
 .msg {
     background-color: #4c6d4a;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg h2 {
 color: white;
+font-family: 'Roboto', 'Arial', 'sans-serif'
 }
 
 .msg p {
     color: white;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 /* Footer */
 footer {
     background-color: #325939;
     color: white;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer p {
@@ -108,4 +152,8 @@ footer a {
 footer a:hover {
     color: white;
     text-decoration: underline;
+}
+
+footer .social img {
+    padding-top: 15px;
 }
