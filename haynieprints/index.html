@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haynie Prints | Home</title>
+</head>
+    <body>
+        <header>
+            <!--Navigation and logo-->
+            <a href="index.html" id="logo">
+                <img src="images/haynieprintslogo.png" alt="haynie prints logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="process.html">My Process</a>
+                <a href="projects.html">My Projects</a>
+            </nav>
+        </header>
+        <!--Main Portion of Homepage-->
+        <main>
+            <!--Hero image and welcome text-->
+            <div id="hero">
+                <h1>Welcome to Haynie Prints!</h1>
+                <img src="images/website_collage.png" alt="collage of my projects">
+            </div>
+
+            <!--About me section-->
+            <section id="abtme">
+                <img src="images/my_armor.png" alt="Me in armor">
+                <div class="abtme-msg">
+                    <h2>About Me</h2>
+                    <p>I first started 3d printing when I was a senior in high school and found that it was something I loved. My first printer was a Creality Ender-3, which is a typical intro level 3d printer, but I was able to create some really cool things with it! I learned that you could print anything you could dream of, no matter how big the object is or how small your printer is, so long as you're willing to put in the extra work of binding everything together. As I started printing more and more, I learned that what I really enjoy is making props and costumes, especially lightsabers and helmets from Starwars. I loved the effort I would have to put into them, not just printing them out, but putting the pieces together, applying putty and sanding it down to smooth out the prints, applying filler and sanding it again to make them even smoother, and finally painting it, making patterns using spray paint and take to make something truly memorable! The first helmet I ever printed was for a 501st jet trooper from Battlefront 2. I ended up printing it in 18 different pieces, cause I didn’t know what I was doing yet! It worked out in the end, using the methods mentioned above. I’ve also grown to love printing and making props for others, so if you’re interested in having me make you something, please reach out using the form below!</p>
+                </div>
+            </section>
+
+            <!--Contact me form-->
+            <section id="contact">
+                <div id="feedback"></div>
+
+                <form action="/my-form-page" method="post">
+                    <h2>Contact Me</h2>
+                    <p>If you’re interested in having me make you something, please reach out to me using this form!</p>
+                <p class="contact-p">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" >
+                </p>
+                <p class="contact-p">
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="user_email" >
+                </p>
+                <p class="contact-p">
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </p>
+                <p class="button">
+                    <button type="submit">Send your message</button>
+                </p>
+                </form>
+                <img src="images/jet_trooper.png" alt="Jet trooper helmet">
+            </section>
+
+        </main>
+        <footer>
+            <p>Haynie Prints &copy; 2025 - Caleb Haynie</p>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            <p><a href="process.html">My Process</a></p>
+            <p><a href="projects.html">My Projects</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="Fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="Twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="Instagram icon">
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>
