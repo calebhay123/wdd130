@@ -46,12 +46,13 @@ header {
 nav {
     display: flex;
     justify-content: space-around;
+    height: 5%;
 }
 nav a {
     text-align: center;
     color: white;
     text-decoration: none;
-    padding: 35px;
+    padding:  0 35px 0 35px;
 }
 
 nav a:hover{

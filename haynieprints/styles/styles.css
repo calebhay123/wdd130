@@ -1,0 +1,206 @@
+/**Global**/
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+h1, h2, h3, h4, h5, h6 {
+    font-family: Roboto, sans-serif;
+}
+
+p {
+    font-family: Overpass;
+}
+
+body {
+    background-color: #c0c0c0;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+/**Header**/
+header {
+    background-color: #004e89;
+    display: grid;
+    grid-template-columns: 125px auto;
+    margin: 0 auto;
+}
+
+/**Nav bar**/
+
+#logo img {
+    width: 100%;
+    border-radius: 90px;
+}
+
+#logo {
+    justify-self: center;
+    align-self: center;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 35px 40px;
+    
+}
+
+nav a:hover{
+    background-color: #1262a0;
+    color: white;
+}
+
+/**Footer**/
+footer {
+    background-color: #004e89;
+    display: grid;
+    grid-template-columns: 1fr fr 1fr;
+}
+
+footer p {
+    grid-column: 1/2;
+    color: white;
+    padding: 10px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.links {
+    grid-column: 2/3;
+    align-self: center;
+}
+
+.social {
+    grid-column: 3/4;
+    padding: 10px;
+}
+
+footer a:hover{
+    background-color: #1262a0;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+/** Home Page **/
+
+/**Hero section**/
+#hero {
+    text-align: center;
+}
+
+#hero img {
+    width: 100%;
+}
+
+/** About Me **/
+#abtme {
+    padding: 100px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#abtme img {
+    grid-column: 1/2;
+    box-shadow: 5px 5px 10px #767575;
+}
+
+.abtme-msg {
+    grid-column: 2/4;
+    background-color: #969393;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 5px 5px 10px #767575;
+}
+
+.abtme-msg h2 {
+    text-align: center;
+}
+
+/** Contact **/
+#contact {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/**Form styling (I used the same from the wwr assignment, since I want a form that I can work on later, but don't want to figure it all out right now.)**/
+#contact .contact-form {
+    display: inline-block;
+  padding: 1em;
+  border: 4px solid #767575;
+  border-radius: 1em;
+  grid-column: 1/2;
+  box-shadow: 5px 5px 10px #767575;
+}
+
+#contact img {
+    grid-column: 2/3;
+    margin: 30px;
+    width: 75%;
+    align-self: center;
+    box-shadow: 5px 5px 10px #767575;
+}
+
+.contact-p + p{
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  min-width: 90px;
+  text-align: right;
+}
+
+input, textarea {
+  font: 1em;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+  outline-style: solid;
+  outline-color: #000;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+
+.button {
+   padding-right: 80px;
+}
+
+button {
+  margin-left: 0.5em;
+}
+
+#feedback {
+    background-color: #0466c8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}

@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haynie Prints | Home</title>
+    <link type="text/css" rel="stylesheet" href="styles/styles.css">
 </head>
     <body>
         <header>
             <!--Navigation and logo-->
+            
             <a href="index.html" id="logo">
                 <img src="images/haynieprintslogo.png" alt="haynie prints logo">
             </a>
@@ -37,8 +39,7 @@
             <!--Contact me form-->
             <section id="contact">
                 <div id="feedback"></div>
-
-                <form action="/my-form-page" method="post">
+                <form action="/my-form-page" method="post" class="contact-form">
                     <h2>Contact Me</h2>
                     <p>If you’re interested in having me make you something, please reach out to me using this form!</p>
                 <p class="contact-p">
@@ -54,7 +55,7 @@
                     <textarea id="msg" name="user_message"></textarea>
                 </p>
                 <p class="button">
-                    <button type="submit">Send your message</button>
+                    <button onclick="scrollToTop()" type="submit">Send your message</button>
                 </p>
                 </form>
                 <img src="images/jet_trooper.png" alt="Jet trooper helmet">
@@ -63,9 +64,11 @@
         </main>
         <footer>
             <p>Haynie Prints &copy; 2025 - Caleb Haynie</p>
-            <p><a href="site-plan.html">Site Plan</a></p>
-            <p><a href="process.html">My Process</a></p>
-            <p><a href="projects.html">My Projects</a></p>
+            <div class="links">
+                <a href="site-plan.html">Site Plan</a>
+                <a href="process.html">My Process</a>
+                <a href="projects.html">My Projects</a>
+            </div>
             <div class="social">
                 <a href="https://facebook.com" target="_blank">
                     <img src="images/facebook.png" alt="Fb icon">
@@ -78,5 +81,25 @@
                 </a>
             </div>
         </footer>
+
+         <!--Javascript-->
+    <script>
+  const feedbackElement = document.getElementById('feedback');
+  const formElement = document.forms[0];
+
+  formElement.addEventListener('submit', function(e) {
+    e.preventDefault();
+    feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your message. We will get back with you as soon as possible!';
+    feedbackElement.style.display = "block";
+    document.body.classList.toggle('moveDown');
+
+    // Smooth scroll to the top of the page
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+</script>
+
     </body>
 </html>
