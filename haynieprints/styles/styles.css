@@ -192,6 +192,7 @@ button {
   background-color: #004e89;
   padding: 10px;
   color: rgb(219, 209, 209);
+  font-size: .75em;
 }
 button:hover {
     background-color: #0062ac;
