@@ -4,7 +4,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Roboto, sans-serif;
 }
 
-p, a {
+p, a, label, button {
     font-family: Overpass;
 }
 
@@ -140,10 +140,10 @@ footer a:hover{
 #contact .contact-form {
     display: inline-block;
   padding: 1em;
-  border: 4px solid #767575;
-  border-radius: 1em;
+  border-radius: 10px;
   grid-column: 1/2;
   box-shadow: 5px 5px 10px #767575;
+  background-color: #969393;
 }
 
 #contact img {
@@ -170,6 +170,7 @@ input, textarea {
   width: 300px;
   box-sizing: border-box;
   border: 1px solid #999;
+  background-color: #d2d2d2;;
 }
 
 input:focus, textarea:focus {
@@ -188,6 +189,12 @@ textarea {
 
 button {
   margin-left: 0.5em;
+  background-color: #004e89;
+  padding: 10px;
+  color: rgb(219, 209, 209);
+}
+button:hover {
+    background-color: #0062ac;
 }
 
 #feedback {
