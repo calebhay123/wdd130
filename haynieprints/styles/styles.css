@@ -4,12 +4,12 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Roboto, sans-serif;
 }
 
-p {
+p, a {
     font-family: Overpass;
 }
 
 body {
-    background-color: #c0c0c0;
+    background-color: #a7a7a7;
     font-size: 22px;
     margin: 0;
     padding: 0;
@@ -317,4 +317,97 @@ display: grid;
     box-shadow: 5px 5px 10px #767575;
 }
 
+
+/*Projects Page*/
+
+#projects-hero{
+    text-align: center;
+}
+
+/*Lightsaber*/
+.saber-card {
+    background-color: #767575;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.saber-card img {
+    grid-column: 1/3;
+    width: 75%;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #343434
+}
+
+/*Pickleball*/
+
+.paddle-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 50px;
+}
+
+.paddle-card img {
+    grid-column: 1/3;
+    width: 60%;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #343434;
+}
+
+/*Clone armor*/
+.clone-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 50px;
+    background-color: #767575;
+}
+
+.clone-card img {
+    grid-column: 1/3;
+    width: 60%;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #343434;
+}
+
+/*Minifigure card*/
+.mini-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 50px;
+}
+
+.mini-card img {
+    grid-column: 1/3;
+    width: 60%;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #343434;
+}
+
+
+/*Projects card message styling*/
+.pro-card-msg {
+    grid-column: 3/5;
+    background-color: #004e89;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    color: rgb(219, 209, 209);
+    box-shadow: 5px 5px 10px #343434
+}
+
+.pro-card-msg a {
+    padding: 10px;
+    background-color: #767575;
+    color: rgb(219, 209, 209);
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.pro-card-msg a:hover {
+    background-color: #868484;
+}
 
